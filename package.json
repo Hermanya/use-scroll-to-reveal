@@ -1,6 +1,6 @@
 {
   "name": "use-scroll-to-reveal",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "React hook for using scroll to reveal components",
   "author": "Hermanya",
   "license": "MIT",
