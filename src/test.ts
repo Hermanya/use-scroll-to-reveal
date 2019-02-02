@@ -1,7 +1,7 @@
-import useMyHook from './'
+import { useScrollToReveal } from './'
 
-describe('useMyHook', () => {
+describe('useScrollToReveal', () => {
   it('is truthy', () => {
-    expect(useMyHook).toBeTruthy()
+    expect(useScrollToReveal).toBeTruthy()
   })
 })

@@ -13,16 +13,16 @@ npm install --save use-scroll-to-reveal
 ## Usage
 
 ```tsx
-import * as React from 'react'
+import React, { useRef } from 'react'
 
-import useMyHook from 'use-scroll-to-reveal'
+import { useScrollToReveal } from 'use-scroll-to-reveal'
 
 const Example = () => {
-  const example = useMyHook()
+  const ref = useRef()
+  const revealed = useScrollToReveal(ref)
   return (
-    <div>
-      {example}
-    </div>
+    <MyCompnentThatAnimatesWhenRevealedIsTrue
+      ref={ref} revealed={revealed}/>
   )
 }
 ```

@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-export const useMyHook = (ref:any) => {
+export const useScrollToReveal = (ref:any) => {
   let [revealed, setRevealed] = React.useState<boolean>(false);
   React.useEffect(() => {
     let observer = new IntersectionObserver((entries) => {
@@ -17,4 +17,3 @@ export const useMyHook = (ref:any) => {
 
   return revealed;
 };
-export default useMyHook;
